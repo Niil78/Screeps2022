@@ -12,7 +12,7 @@ var r = Game.rooms['W44S41']; // Room
 
 //########## REMOTO NURSEs ##########
     var RNURD = 1; // Nurse, Droper
-    var RNURP = 1; // Nurse, Picker
+    var RNURP = 2; // Nurse, Picker
     var RLOG  = 0; // Logistica Remota
 //###################################
 
@@ -24,11 +24,11 @@ var r = Game.rooms['W44S41']; // Room
 
 //########## REMOTO NURSEs ##########
     var RNURD2 = 1; // Nurse, Droper
-    var RNURP2 = 2; // Nurse, Picker
+    var RNURP2 = 6; // Nurse, Picker
     var RLOG2 = 0; // Logistica Remota
 //###################################
 
-    var RLOG3 = 5; // Logistica Remota
+    var RLOG3 = 3; // Logistica Remota
     var RMIN = 1; // Mineria Remota (Bandera GRIS)
 
 //########## SQUAD NURSEs ##########
@@ -252,7 +252,7 @@ if(r.memory.prioridadSpawn == 1)
             var i =  Game.time - 51032855;
             var newName = 'Filler' + i;
             //console.log('Necesitamos un:' + newName);
-            Game.spawns['Antz'].spawnCreep([CARRY,CARRY,MOVE,MOVE,CARRY,CARRY,MOVE,CARRY,MOVE,CARRY,MOVE,CARRY,MOVE,MOVE,MOVE,MOVE,CARRY,CARRY,MOVE,CARRY], newName, // NURSE FILL
+            Game.spawns['Antz'].spawnCreep([CARRY,CARRY,MOVE,MOVE,CARRY,CARRY,MOVE,MOVE,CARRY,CARRY,MOVE,MOVE,CARRY,CARRY,MOVE,CARRY,MOVE,CARRY,MOVE,CARRY,MOVE,MOVE,MOVE,MOVE,CARRY,CARRY,MOVE,CARRY], newName, // NURSE FILL
             {memory: {role: 'filler'}})}
 } //## SPAWN 1
 
@@ -299,7 +299,7 @@ if(r.memory.prioridadSpawn == 4)
             var i =  Game.time - 51032855;
             var newName = 'R0P' + i;
             //console.log('Necesitamos un:' + newName);
-            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,CARRY,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE], newName, // REMOTO NURSE PICKER
+            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,WORK,WORK,WORK,WORK,WORK,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY], newName, // REMOTO NURSE PICKER
             {memory: {role: 'rnursePicker', role2: 'rnursePicker', destino: 'W43S41'}})}
 
            //### PICKER REMOTO 1
@@ -307,7 +307,7 @@ if(r.memory.prioridadSpawn == 4)
             var i =  Game.time - 51032855;
             var newName = 'R1P' + i;
             //console.log('Necesitamos un:' + newName);
-            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,CARRY,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE], newName, // REMOTO NURSE PICKER
+            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,WORK,WORK,WORK,WORK,WORK,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY], newName, // REMOTO NURSE PICKER
             {memory: {role: 'rnursePicker', role2: 'rnursePicker1' , destino: 'W45S41'}})}
 
             //###PICKER REMOTO 2
@@ -315,7 +315,7 @@ if(r.memory.prioridadSpawn == 4)
             var i =  Game.time - 51032855;
             var newName = 'R2P' + i;
             //console.log('Necesitamos un:' + newName);
-            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,CARRY,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE], newName, // REMOTO NURSE PICKER
+            Game.spawns['Antz'].spawnCreep([WORK,WORK,WORK,WORK,WORK,WORK,WORK,WORK,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY,CARRY], newName, // REMOTO NURSE PICKER
             {memory: {role: 'rnursePicker', role2: 'rnursePicker2' , destino: 'W42S41'}})}
 } //## SPAWN 4
 

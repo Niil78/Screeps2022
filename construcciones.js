@@ -36,40 +36,40 @@ var construiccion =
 		{
 			if(core)
 			{
-				if(creep.build(Core) == == ERR_NOT_IN_RANGE)
+				if(creep.build(Core) == ERR_NOT_IN_RANGE)
 				{
 					creep.moveTo(Core);
 				}
 			}
-			if(Road)
+			else if(Road)
 			{
 				if(creep.build(Road) == ERR_NOT_IN_RANGE)
 				{
 					creep.moveTo(Road);
 				}
 			}
-			if(Storage)
+			else if(Storage)
 			{
 				if(creep.build(Storage) == ERR_NOT_IN_RANGE)
 				{
 					creep.moveTo(Storage);
 				}
 			}
-			if(Storage)
+			else if(Storage)
 			{
 				if(creep.build(Muros) == ERR_NOT_IN_RANGE)
 				{
 					creep.moveTo(Muros);
 				}
 			}
-			if(Trader)
+			else if(Trader)
 			{
 				if(creep.build(build) == ERR_NOT_IN_RANGE)
 				{
 					creep.moveTo(Trader);
 				}
 			}
-			if(Factory)
+			else if(Factory)
 			{
 				if(creep.build(Factory) == ERR_NOT_IN_RANGE)
 				{
